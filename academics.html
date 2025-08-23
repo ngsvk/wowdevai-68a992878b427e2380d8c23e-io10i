@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="x-icon" href="https://github.com/Satyamurthi/mbw-Photos/blob/main/Logo/sai%20school%20logo%20png.png?raw=true">
+  <title>Academics - Sri Sathya Sai Baba School & Pre-University College</title>
+  
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B3764',
+            secondary: '#DAA520'
+          },
+          borderRadius: {
+            'button': '8px'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Sofia Pro Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- RemixIcon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="bg-white">
+  
+  <!-- Navigation -->
+  <div id="navbar-container" data-source="components/navbar.html" data-id="navbar-wrapper"></div>
+  
+  <!-- Main Content -->
+  <main class="pt-16" data-id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-primary/80 text-white py-20" data-id="academics-hero">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-id="academics-hero-content">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6" data-id="academics-hero-title">Academic Excellence</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" data-id="academics-hero-subtitle">
+          Empowering students through comprehensive education and holistic development
+        </p>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="py-20 bg-white" data-id="programs-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="programs-container">
+        <div class="text-center mb-16" data-id="programs-header">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4" data-id="programs-title">Academic Programs</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto" data-id="programs-subtitle">
+            Comprehensive educational pathways designed to nurture intellectual growth and character development
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-id="programs-grid">
+          <!-- Programs will be loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="py-20 bg-gray-50" data-id="subjects-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="subjects-container">
+        <div class="text-center mb-16" data-id="subjects-header">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4" data-id="subjects-title">Subjects Offered</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto" data-id="subjects-subtitle">
+            Comprehensive curriculum covering essential subjects for holistic education
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-id="subjects-grid">
+          <!-- Subjects will be loaded here -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container" data-source="components/footer.html" data-id="footer-wrapper"></div>
+
+  <!-- Badge -->
+  <div id="badge-container" data-source="components/badge.html" data-id="badge-wrapper"></div>
+
+  <!-- Scripts -->
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    import { initializeAcademics } from './scripts/pages/academics.js';
+    
+    // Load all shared components
+    await loadComponent('#navbar-container');
+    await loadComponent('#footer-container');
+    await loadComponent('#badge-container');
+    
+    // Initialize page-specific functionality
+    initializeAcademics();
+    
+    // Initialize icons after components are loaded
+    lucide.createIcons();
+  </script>
+</body>
+</html>
