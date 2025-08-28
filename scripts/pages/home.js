@@ -181,6 +181,14 @@ function initSisterInstitutesSlider() {
       image: 'https://github.com/Satyamurthi/mbw-Photos/blob/main/Sister%20Institutes/Alike.jpg?raw=true'
     },
     {
+      name: 'JHFG',
+      image: 'https://github.com/Satyamurthi/mbw-Photos/blob/main/Sister%20Institutes/Alike.jpg?raw=true'
+    },
+    {
+      name: 'JHDF',
+      image: 'https://github.com/Satyamurthi/mbw-Photos/blob/main/Sister%20Institutes/Alike.jpg?raw=true'
+    },
+    {
       name: 'Dharwad',
       image: 'https://github.com/Satyamurthi/mbw-Photos/blob/main/Sister%20Institutes/Dharwad%202.jpg?raw=true'
     },
@@ -325,21 +333,6 @@ function initCampusLifeGallery() {
       src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3',
       alt: 'Student Housing',
       title: 'Student Housing'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3',
-      alt: 'Sports Facilities',
-      title: 'Sports Facilities'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3',
-      alt: 'Sports Facilities',
-      title: 'Sports Facilities'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3',
-      alt: 'Sports Facilities',
-      title: 'Sports Facilities'
     },
     {
       src: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3',
