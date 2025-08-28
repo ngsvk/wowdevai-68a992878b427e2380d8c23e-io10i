@@ -14,12 +14,12 @@ export function initializeHome() {
 function initYouTubeVideo() {
   window.onYouTubeIframeAPIReady = function() {
     new YT.Player('video-container', {
-      videoId: 'zKz4QQKx_jo',
+      videoId: 'wPQjjYBbTzXayt7N',
       playerVars: {
         autoplay: 1,
         mute: 1,
         loop: 1,
-        playlist: 'zKz4QQKx_jo',
+        playlist: 'wPQjjYBbTzXayt7N',
         controls: 0,
         showinfo: 0,
         modestbranding: 1,
@@ -325,6 +325,21 @@ function initCampusLifeGallery() {
       src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3',
       alt: 'Student Housing',
       title: 'Student Housing'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3',
+      alt: 'Sports Facilities',
+      title: 'Sports Facilities'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3',
+      alt: 'Sports Facilities',
+      title: 'Sports Facilities'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3',
+      alt: 'Sports Facilities',
+      title: 'Sports Facilities'
     },
     {
       src: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3',
